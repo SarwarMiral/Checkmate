@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "405853168975",
+    "firebase_url": "https://checkmates-a6526.firebaseio.com",
+    "project_id": "checkmates-a6526",
+    "storage_bucket": "checkmates-a6526.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405853168975:android:83ebf5e4be7d7818",
+        "android_client_info": {
+          "package_name": "com.example.multiplexer.checkmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405853168975-ao057vkgf8k16n368201jj8p3h53b6ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.multiplexer.checkmate">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/onlyicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.example.multiplexer.checkmate.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <receiver android:name="com.example.multiplexer.checkmate.AlarmReciver" />
+
+        <activity android:name="com.example.multiplexer.checkmate.First_Step_One"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.First_Step_Two"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.Second_Step_One"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.Second_Step_Two"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.Second_Step_Three"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.Third_Step_One"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.RemindMe"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.Remind_note"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.LearnMore"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.Symptoms"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.KeepLearning"></activity>
+        <activity android:name="com.example.multiplexer.checkmate.SymptomsExplain"></activity>
+        <activity android:name=".Notes"></activity>
+
+    </application>
+
+</manifest>

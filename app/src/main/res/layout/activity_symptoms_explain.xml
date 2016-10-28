@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.multiplexer.checkmate.SymptomsExplain"
+    tools:showIn="@layout/nav_activity_symptoms_explainms">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="SYMPTOMS TO CHECK"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="You may normally feel breast tissue changes or pain before or during your periods. This is why it’s important to check your breasts regularly so you get to know how they look and feel at different times of the month, and can notice any changes that are unusual for you."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/purple_textview_shape"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="TOUCH"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/mdtp_white" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/white_textview_shape"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="# Can you feel a lump? Either in the breast, upper chest or armpits.\n#  Is there a lumpy area? Or unusual thickening of the breast tissue that doesn’t go away?\n# Is there any unusual pain? Either in part of the  breast or the armpit."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/purple_textview_shape"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="LOOK"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/mdtp_white" />
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/white_textview_shape"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="# Any change in size or shape? e.g. one breast might become larger or lower than the other.\n# Any change in skin texture? Such as puckering or dimpling of the skin of the breast.\n# Any change in colour? e.g. the breast may look red or inflamed.\n# What about the appearance or direction of the nipple? e.g. one might become inverted (turned in) when it normally points out.\n#Any unusual discharge? One or both nipples  might have a discharge.\n# Any rash or crusting? Of the nipple or surrounding area."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/purple_textview_shape"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="CHECK"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/mdtp_white" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/white_textview_shape"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="#  Is anything unusual? If so, get it checked out by your doctor as soon as possible."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source: breastcancernow.org"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="right"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:id="@+id/textView5" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/prev"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/next_buttonshape"
+        android:src="@drawable/left" />
+
+
+</RelativeLayout>

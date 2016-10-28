@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.multiplexer.checkmate.Third_Step_One"
+    tools:showIn="@layout/nav_three_one">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/step3_1"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_toLeftOf="@+id/play"
+        android:id="@+id/text_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:background="#80000000"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/title_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 3"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you feel anything unusual, call the doctor for an appointment as soon as you can to have it checked."
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/title_step"
+            />
+        <TextView
+            android:id="@+id/rightMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_alignParentRight="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/text_holder"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_margin="10dp"
+        android:background="#CC67328E"
+        />
+
+    <TextView
+        android:id="@+id/fm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Powered by ColoursFM 101.6"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FEELING SUSPICIOUS?"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#67328E"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/take_note"
+        android:layout_alignRight="@+id/take_note"
+        android:background="@android:color/white"
+        android:layout_above="@+id/take_note"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/take_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/pink_button_shape"
+        android:layout_alignParentLeft="true"
+        android:text="MAKE AN\nAPPOINTMENT"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_above="@+id/fm"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO FOR NEXT\nCHECKUP REMINDER"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#67328E"
+        android:layout_above="@+id/take_note2"
+        android:layout_alignLeft="@+id/take_note2"
+        android:layout_alignRight="@+id/take_note2"
+        android:background="@android:color/white"
+        android:layout_marginBottom="5dp"
+        android:padding="2dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:id="@+id/take_note2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/pink_button_shape"
+        android:layout_alignParentRight="true"
+        android:text="REMIND ME"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_above="@+id/fm"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" />
+
+
+
+</RelativeLayout>
